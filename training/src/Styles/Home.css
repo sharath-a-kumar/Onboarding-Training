@@ -1,0 +1,81 @@
+
+.home-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .hero-section {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fbf5f5;
+  }
+  
+  .hero-section h1 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .hero-section p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .featured-pizzas {
+    margin-top: 40px;
+  }
+  
+  .featured-pizzas h2 {
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .pizza-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .pizza-card {
+    text-align: center;
+  }
+  
+  .pizza-card img {
+    max-width: 15%;  /* Adjust the percentage as needed */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .pizza-card h3 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .pizza-card p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .how-to-order {
+    margin-top: 40px;
+  }
+  
+  .how-to-order h2 {
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .how-to-order p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .how-to-order ol {
+    list-style: decimal;
+    margin-left: 20px;
+  }
+  
+  /* Add more styles as needed */
+  

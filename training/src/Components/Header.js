@@ -1,12 +1,11 @@
-// Header.js
 import React from 'react';
-import './Header.css';
+import '../Styles/Header.css';
 
 const Header = () => {
   return (
     <header className="header">
       {/* Your header content goes here */}
-      <h1>Genesys Pure Connect  </h1>
+      <h1>Pizza Store</h1>
     </header>
   );
 }

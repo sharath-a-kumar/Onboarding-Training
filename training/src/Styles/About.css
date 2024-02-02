@@ -1,0 +1,20 @@
+/* Components/About.css */
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about-heading {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .about-content {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* Add more styles as needed */
+  
