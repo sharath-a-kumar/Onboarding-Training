@@ -4,7 +4,7 @@ import '../Styles/Navigation.css';
 const Navigation = () => {
   return (
     <nav className="navigation">
-      {/* Your navigation content goes here */}
+     
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
@@ -13,5 +13,4 @@ const Navigation = () => {
     </nav>
   );
 }
-
 export default Navigation;

@@ -1,19 +1,29 @@
-// Components/About.js
+// Components/AboutUsPage.js
 import React from 'react';
-import '../Styles/About.css'
 
-const About = () => {
+const AboutUsPage = () => {
   return (
     <div>
-      <h2>About Page</h2>
+      <h1> About Us </h1>
       <p>
-        Welcome to the About page! Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        At Love Pets, we are dedicated to finding loving homes for pets in need.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
       </p>
-      {/* Add more content as needed */}
+      <p>
+        Our mission is to connect pets with caring individuals and families,
+        providing a second chance for animals to experience love and happiness.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <p>
+        Whether you're looking to adopt a new furry friend or support our
+        cause, Love Pets is here for you. 
+      </p>
     </div>
   );
 };
 
-export default About;
+export default AboutUsPage;

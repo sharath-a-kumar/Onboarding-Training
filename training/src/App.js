@@ -6,7 +6,8 @@ import Navigation from './Components/Navigation.js';
 import About from './Components/About.js';
 import Login from './Components/Login.js';
 import Home from './Components/Home.js';
-
+import AdoptablePetsPage from './Components/AdoptablePetsPage.js'
+import PetAdoptionForm from './Components/PetAdoptionForm.js'
 function App() {
   return (
     <Router>
@@ -19,9 +20,11 @@ function App() {
         <main className="main-content">
 
           <Routes>
+          <Route path= "/" element = {<Home />} />
             <Route path= "/Login" element = {<Login />} />
             <Route path="/about" element={<About />} />
-            <Route path="/Home" element={<Home />} />
+            <Route path="/AdoptablePetsPage" element={<AdoptablePetsPage />} />
+            <Route path="/PetAdoptionForm" element={<PetAdoptionForm />} />
           </Routes>
         </main>
         <Footer />

@@ -78,4 +78,32 @@
   }
   
   /* Add more styles as needed */
-  
+  /* Your existing styles for the header */
+/* CSS */
+.hero-section {
+  position: relative;
+  height: 400px; /* Set the height of your hero section */
+  background-image: url('https://t3.ftcdn.net/jpg/00/85/32/68/240_F_85326806_k3nKFfDnL7BKZZpgplibILjssleez7za.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 20px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
