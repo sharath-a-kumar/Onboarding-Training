@@ -1,8 +1,8 @@
-// Components/AdoptionForm.js
+// src/components/AdoptionForm.js
 import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import '../Styles/PetAdoptionForm.css'; // Import the AdoptionForm.css stylesheet
+import '../Styles/PetAdoptionForm.css';
 
 const AdoptionForm = () => {
   const [formData, setFormData] = useState({
@@ -10,13 +10,20 @@ const AdoptionForm = () => {
     email: '',
     phoneNumber: '',
     message: '',
-    adoptionDate: null, // Add a new field for the adoption date
+    adoptionDate: null,
   });
+
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value.trim(),
+    });
+
+    setErrors({
+      ...errors,
+      [e.target.name]: '',
     });
   };
 
@@ -25,12 +32,75 @@ const AdoptionForm = () => {
       ...formData,
       adoptionDate: date,
     });
+
+    setErrors({
+      ...errors,
+      adoptionDate: '',
+    });
   };
 
-  const handleSubmit = (e) => {
+  const validateForm = () => {
+    let valid = true;
+    const newErrors = {};
+
+    if (!formData.name) {
+      newErrors.name = 'Name is required';
+      valid = false;
+    }
+
+    if (!formData.email) {
+      newErrors.email = 'Email is required';
+      valid = false;
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = 'Invalid email format';
+      valid = false;
+    }
+
+    if (!formData.phoneNumber) {
+      newErrors.phoneNumber = 'Phone Number is required';
+      valid = false;
+    }
+
+    if (!formData.message) {
+      newErrors.message = 'Message is required';
+      valid = false;
+    }
+
+    if (!formData.adoptionDate) {
+      newErrors.adoptionDate = 'Preferred Adoption Date is required';
+      valid = false;
+    }
+
+    setErrors(newErrors);
+    return valid;
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // You can add logic here to handle the form submission, such as sending the data to a server or displaying a confirmation message.
-    console.log('Form submitted:', formData);
+
+    if (validateForm()) {
+      try {
+        const response = await fetch('http://localhost:3000/submitAdoptionForm', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+          const responseData = await response.json();
+          console.log('Form submitted successfully:', responseData);
+         
+        } else {
+          console.error('Failed to submit the form');
+        }
+      } catch (error) {
+        console.error('Error submitting the form:', error);
+      }
+    } else {
+      console.log('Form validation failed:', errors);
+    }
   };
 
   return (
@@ -46,6 +116,7 @@ const AdoptionForm = () => {
           onChange={handleChange}
           required
         />
+        {errors.name && <div className="error-message">{errors.name}</div>}
 
         <label htmlFor="email">Email:</label>
         <input
@@ -56,6 +127,7 @@ const AdoptionForm = () => {
           onChange={handleChange}
           required
         />
+        {errors.email && <div className="error-message">{errors.email}</div>}
 
         <label htmlFor="phoneNumber">Phone Number:</label>
         <input
@@ -66,6 +138,9 @@ const AdoptionForm = () => {
           onChange={handleChange}
           required
         />
+        {errors.phoneNumber && (
+          <div className="error-message">{errors.phoneNumber}</div>
+        )}
 
         <label htmlFor="message">Message:</label>
         <textarea
@@ -75,6 +150,7 @@ const AdoptionForm = () => {
           onChange={handleChange}
           required
         ></textarea>
+        {errors.message && <div className="error-message">{errors.message}</div>}
 
         <label htmlFor="adoptionDate">Preferred Adoption Date:</label>
         <DatePicker
@@ -82,11 +158,14 @@ const AdoptionForm = () => {
           name="adoptionDate"
           selected={formData.adoptionDate}
           onChange={handleDateChange}
-          dateFormat="dd-MM-yyyy" // Set the date format to DD-MM-YYYY
+          dateFormat="dd-MM-yyyy"
           placeholderText="Click to select a date"
           isClearable
           required
         />
+        {errors.adoptionDate && (
+          <div className="error-message">{errors.adoptionDate}</div>
+        )}
 
         <button type="submit">Submit Adoption Request</button>
       </form>
