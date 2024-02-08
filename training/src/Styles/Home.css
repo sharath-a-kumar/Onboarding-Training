@@ -1,0 +1,294 @@
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #fbf5f5;
+}
+
+.hero-section h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.hero-section p {
+  font-size: 18px;
+  color: #555;
+}
+
+.featured-pizzas {
+  margin-top: 40px;
+}
+
+.featured-pizzas h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+.pizza-list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.pizza-card {
+  text-align: center;
+}
+
+.pizza-card img {
+  max-width: 15%;  /* Adjust the percentage as needed */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+.pizza-card h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.pizza-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.how-to-order {
+  margin-top: 40px;
+}
+
+.how-to-order h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+.how-to-order p {
+  font-size: 18px;
+  color: #555;
+}
+
+.how-to-order ol {
+  list-style: decimal;
+  margin-left: 20px;
+}
+/* Your existing styles for the header */
+/* Your existing styles for the header */
+/* CSS */
+.hero-section {
+  position: relative;
+  height: 400px; /* Set the height of your hero section */
+  background-image: url('https://t3.ftcdn.net/jpg/00/85/32/68/240_F_85326806_k3nKFfDnL7BKZZpgplibILjssleez7za.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Add an overlay to enhance text visibility */
+.hero-section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+}
+
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+#Title {
+  font-size: calc(5px + 5vh);
+  line-height: calc(20px + 20vh);
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+  font-family: "Sacramento";
+  text-align: center;
+  animation: blink 4s infinite;
+  -webkit-animation: blink 4s infinite;
+}
+
+.pet-icon {
+  font-size: 1.5em; /* Adjust the size of the pet icon as needed */
+  margin-right: 0.2em; /* Adjust the spacing between the icon and text as needed */
+}
+
+@-webkit-keyframes blink {
+  20%, 24%, 55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%, 24%, 55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif; 
+  color: #ffcc00; 
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ffffff; 
+}
+
+
+.hero-content h1, .hero-content p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+
+.pet-icon {
+  font-size: 1.5em; 
+}
+
+
+
+image {
+width: 100%;
+}
+
+/* banner */
+
+
+/* Styles.css or your custom CSS file */
+.swiper-slide-image {
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.swiper-slide-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.swiper-container {
+width: 100%;
+}
+
+.swiper-slide {
+flex: 0 0 auto;
+}
+
+
+/* Button/*
+
+/* CSS */
+.next-page-button {
+  background-color: #3498db;
+  border-radius: 100px;
+  box-shadow: rgba(52, 152, 219, 0.2) 0 -25px 18px -14px inset, rgba(52, 152, 219, 0.15) 0 1px 2px, rgba(52, 152, 219, 0.15) 0 2px 4px, rgba(52, 152, 219, 0.15) 0 4px 8px, rgba(52, 152, 219, 0.15) 0 8px 16px, rgba(52, 152, 219, 0.15) 0 16px 32px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.next-page-button:hover {
+  box-shadow: rgba(52, 152, 219, 0.35) 0 -25px 18px -14px inset, rgba(52, 152, 219, 0.25) 0 1px 2px, rgba(52, 152, 219, 0.25) 0 2px 4px, rgba(52, 152, 219, 0.25) 0 4px 8px, rgba(52, 152, 219, 0.25) 0 8px 16px, rgba(52, 152, 219, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+
+
+
+
+/* Your existing styles for the header */
+/* Add the following styles for the new section with image and information */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px; /* Adjust padding as needed */
+}
+
+.left-column img {
+  max-width: 100%; /* Set a maximum width for the image */
+  height: auto; /* Maintain the aspect ratio of the image */
+  border-radius: 8px; /* Optional: Add border-radius for a rounded look */
+}
+
+.right-column {
+  flex: 1;
+  margin-left: 0%; /* Adjust margin as needed */
+  text-align: center;
+}
+
+/* Styles for the pet information section */
+.pet-info-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px; /* Adjust margin as needed */
+}
+
+/* Add responsive styles for smaller screens if necessary */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column; /* Stack columns on smaller screens */
+    text-align: center; /* Center text for better readability */
+    padding: 20px; /* Adjust padding as needed */
+  }
+
+  .left-column img {
+    max-width: 100%; /* Set a maximum width for the image on smaller screens */
+    margin-bottom: 20px; /* Add space between image and text */
+  }
+
+  .right-column {
+    margin-left: 0; /* Remove left margin on smaller screens */
+  }
+
+  /* Add styles for the pet information section on smaller screens if needed */
+  .pet-info-section {
+    flex-direction: column; /* Stack columns on smaller screens */
+    text-align: center; /* Center text for better readability */
+    margin-bottom: 20px; /* Adjust margin as needed */
+  }
+}
+
+
+
