@@ -6,27 +6,22 @@ import 'swiper/css/navigation'; // Import Swiper navigation styles
 import 'swiper/css/pagination'; // Import Swiper pagination styles
 import 'swiper/css/scrollbar'; // Import Swiper scrollbar styles
 import 'swiper/css/effect-cube'; // Import Swiper cube effect styles
-import 'swiper/css/autoplay'; // Import Swiper autoplay styles
-
+import 'swiper/css/autoplay'; 
 import '../Styles/Home.css';
 import '../Styles/Navbar.css';
+
 
 const HomeSwiper = ({ slides }) => {
   return (
     <Swiper
-      spaceBetween={50}
-      slidesPerView={3}
+      spaceBetween={5}
+      slidesPerView={2}
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
-      effect="cube"
-      cubeEffect={{
-        shadow: true,
-        slideShadows: true,
-        shadowOffset: 20,
-        shadowScale: 0.94,
-      }}
-      autoplay={{ delay: 2500, disableOnInteraction: false }}
+      effect="slide" 
+      autoplay={{ delay: 2000, disableOnInteraction: false }}
+      loop={true}
     >
       {slides.map((slide) => (
         <SwiperSlide key={slide.id}>
@@ -40,6 +35,7 @@ const HomeSwiper = ({ slides }) => {
     </Swiper>
   );
 };
+
 
 
 const HomePage = () => {
@@ -86,24 +82,24 @@ const HomePage = () => {
 
       <header className="hero-section">
       <div className="hero-content">
-       <h1 id= "Title"><span class="pet-icon">🐾</span> Pet Finder 🐾</h1>
+       <h1 id= "Title"><span class="pet-icon"></span> Pet Finder </h1>
        <p>Your Pet Adoption Journey With Pet Finder 🐾</p>
         </div>
       </header>
 
       <div className="main-content">
-        {/* Image with left-side information and right-side details */}
-        <div className="left-column">
-          <img
-            src="https://dm6g3jbka53hp.cloudfront.net/static-images/adopt-me-pet-02032021.jpg"
-            alt="Pet"
-            style={{ width: '50%', height: '50%', objectFit: 'cover' }}
-          />
-        </div>
-        <div className="right-column">
-  <h2>Your New Best Friend Awaits</h2>
-  <p>Adopting a dog brings unconditional love, joy, and health benefits to your life. Save a life, find a loyal companion, and be a part of the solution. Explore our dogs and discover the happiness that adoption brings!</p>
-</div>
+      {/* Image with left-side information and right-side details */}
+      <div className="left-column">
+        <img
+          src="https://dm6g3jbka53hp.cloudfront.net/static-images/adopt-me-pet-02032021.jpg"
+          alt="Pet"
+          style={{ width: '50%', height: '50%', borderRadius: '20%' }}
+        />
+      </div>
+      <div className="right-column">
+        <h2>Your New Best Friend Awaits</h2>
+        <p>Adopting a dog brings unconditional love, joy, and health benefits to your life. Save a life, find a loyal companion, and be a part of the solution. Explore our dogs and discover the happiness that adoption brings!</p>
+      </div>
 
       </div>
       <section className="how-to-adopt">
@@ -120,9 +116,7 @@ const HomePage = () => {
       </section>
 
       
-      <Link to="/PetAdoptionForm" className="next-page-button">
-        Next: Adoption Form
-      </Link>
+     
     </div>
   );
 };

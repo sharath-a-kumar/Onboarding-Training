@@ -1,7 +1,7 @@
 .home-page {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 20px;
+
 }
 
 .hero-section {
@@ -81,14 +81,14 @@
 .hero-section {
   position: relative;
   height: 400px; /* Set the height of your hero section */
-  background-image: url('https://t3.ftcdn.net/jpg/00/85/32/68/240_F_85326806_k3nKFfDnL7BKZZpgplibILjssleez7za.jpg');
+  background-image: url('https://media.istockphoto.com/id/1191962521/photo/dogs-peeking-eyes-and-paws-over-white-web-banner.jpg?s=612x612&w=0&k=20&c=hDMPPY1qeXY3DWEQELj77u__oSx2bi_DXlSTtEmTSIs=');
   background-size: cover;
   background-position: center;
   color: #ffffff;
   text-align: center;
 }
 
-/* Add an overlay to enhance text visibility */
+
 .hero-section:before {
   content: "";
   position: absolute;
@@ -236,6 +236,8 @@ flex: 0 0 auto;
 
 
 
+
+
 /* Your existing styles for the header */
 /* Add the following styles for the new section with image and information */
 .main-content {
@@ -279,7 +281,7 @@ flex: 0 0 auto;
   }
 
   .right-column {
-    margin-left: 0; /* Remove left margin on smaller screens */
+    margin-left: 50; /* Remove left margin on smaller screens */
   }
 
   /* Add styles for the pet information section on smaller screens if needed */
