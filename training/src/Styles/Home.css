@@ -1,7 +1,6 @@
 .home-page {
   max-width: 100%;
   margin: 0 auto;
-
 }
 
 .hero-section {
@@ -20,68 +19,12 @@
   color: #555;
 }
 
-.featured-pizzas {
-  margin-top: 40px;
-}
-
-.featured-pizzas h2 {
-  font-size: 28px;
-  color: #333;
-}
-
-.pizza-list {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-
-.pizza-card {
-  text-align: center;
-}
-
-.pizza-card img {
-  max-width: 15%;  /* Adjust the percentage as needed */
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
 
 
-.pizza-card h3 {
-  font-size: 24px;
-  color: #333;
-}
-
-.pizza-card p {
-  font-size: 16px;
-  color: #555;
-}
-
-.how-to-order {
-  margin-top: 40px;
-}
-
-.how-to-order h2 {
-  font-size: 28px;
-  color: #333;
-}
-
-.how-to-order p {
-  font-size: 18px;
-  color: #555;
-}
-
-.how-to-order ol {
-  list-style: decimal;
-  margin-left: 20px;
-}
-/* Your existing styles for the header */
-/* Your existing styles for the header */
-/* CSS */
 .hero-section {
   position: relative;
   height: 400px; /* Set the height of your hero section */
-  background-image: url('https://media.istockphoto.com/id/1191962521/photo/dogs-peeking-eyes-and-paws-over-white-web-banner.jpg?s=612x612&w=0&k=20&c=hDMPPY1qeXY3DWEQELj77u__oSx2bi_DXlSTtEmTSIs=');
+  background-image: url('https://img.freepik.com/premium-vector/adopt-pet-facebook-cover-design_578602-507.jpg?w=1380');
   background-size: cover;
   background-position: center;
   color: #ffffff;
@@ -101,7 +44,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 
-#Title {
+/* #Title {
   font-size: calc(5px + 5vh);
   line-height: calc(20px + 20vh);
   text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
@@ -110,7 +53,7 @@
   text-align: center;
   animation: blink 4s infinite;
   -webkit-animation: blink 4s infinite;
-}
+} */
 
 .pet-icon {
   font-size: 1.5em; /* Adjust the size of the pet icon as needed */
@@ -291,6 +234,141 @@ flex: 0 0 auto;
     margin-bottom: 20px; /* Adjust margin as needed */
   }
 }
+
+
+
+.marquee-container {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 20s linear infinite; /* Adjust duration and other properties */
+}
+
+.marquee-image {
+  width: 50px; /* Set the desired width */
+  height: 50px; /* Set the desired height */
+  margin-right: 10px; /* Adjust spacing between images */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h1, h2 {
+  color: #000000;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  background-color: #ffa500;
+}
+
+p {
+  color: #000000;
+  font-size: 1.1em;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+strong {
+  color: #333;
+}
+
+/* Style for the Frequently Asked Questions section */
+ul li {
+  padding-left: 20px;
+  position: relative;
+}
+
+ul li:before {
+  content: '•';
+  color: #007bff;
+  position: absolute;
+  left: 0;
+}
+
+.marquee {
+  display:inline-flex;
+
+}
+
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(-00%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+h1 {
+  color: #000000; /* Text color */
+  background-color: #ffa500;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px; 
+}
+
+
 
 
 
