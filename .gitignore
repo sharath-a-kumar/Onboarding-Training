@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Dependency directories
+pids
+logs
+*.pid
+*.seed
+*.pid.lock
+
+# Optional: Uncomment the next line if you have a Yarn lock file
+# yarn.lock
+
+# Optional: Uncomment the next line if you have a pnpm lock file
+# pnpm-lock.yaml
+
+# Optional: Uncomment the next line if you have a .env file
+# .env
