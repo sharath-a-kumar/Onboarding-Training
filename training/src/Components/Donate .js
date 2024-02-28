@@ -29,7 +29,7 @@ const DonatePage = () => {
     console.log(`Donor Name: ${donorName}`);
     console.log(`Donor Email: ${donorEmail}`);
     console.log(`Donor Message: ${donorMessage}`);
-    // You can add further logic based on your requirements.
+
   };
 
   return (

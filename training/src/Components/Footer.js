@@ -8,8 +8,8 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h3>Contact Us</h3>
-          <p>Email: info@lovepets.com</p>
+          <h3>Contact Us</h3> 
+          <p>Email: TailWaggingAdoptions.com</p>
           <p>Phone: (123) 456-7890</p>
         </div>
         <div className="footer-section">

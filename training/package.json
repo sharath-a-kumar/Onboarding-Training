@@ -22,11 +22,15 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "jest",
+  "eject": "react-scripts eject",
+  "test:watch": "jest --watch",
+  "test:coverage": "jest --coverage",
+  "test:ci": "jest --runInBand --coverage"
+},
+
   "eslintConfig": {
     "extends": [
       "react-app",

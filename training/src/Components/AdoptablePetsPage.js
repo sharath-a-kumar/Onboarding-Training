@@ -66,7 +66,7 @@ const AdoptablePetsPage = () => {
             <h3>{pet.name}</h3>
             <p>{pet.species}</p>
             <p>{pet.breed}</p>
-            <button>View Profile</button>
+            <button>Adopt Now</button>
           </div>
         ))}
       </div>

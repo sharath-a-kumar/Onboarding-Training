@@ -1,7 +1,6 @@
 
 import React, { useState } from 'react';
 
-
 const PetAdoptionForm = () => {
   const [formData, setFormData] = useState({
     name: '',

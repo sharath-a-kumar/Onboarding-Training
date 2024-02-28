@@ -4,7 +4,7 @@
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
 .pet-adoption-form-container h2 {
@@ -17,12 +17,12 @@
 
 form {
   display: grid;
-  gap: 16px;
+  gap: 10px;
 }
 
 label {
+  display: block;
   font-weight: bold;
-  color: #333;
 }
 
 input,
@@ -30,9 +30,11 @@ textarea,
 select {
   width: 100%;
   padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-sizing: border-box;
 }
 
 button {
@@ -48,3 +50,5 @@ button {
 button:hover {
   background-color: #45a049;
 }
+
+/* Add additional styles as needed */
