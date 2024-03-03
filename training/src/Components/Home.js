@@ -19,7 +19,7 @@ const HomeSwiper = ({ slides }) => {
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
       effect="slide"
-      autoplay={{ delay: 2000, disableOnInteraction: false }}
+      autoplay={{ delay: 1000, disableOnInteraction: false }}
       loop={true}
     >
       {slides.map((slide) => (
@@ -74,19 +74,36 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
-      <nav className="navbar">
+      <nav class="navbar">
+        <div className="logo">
+          {/* Use the provided image URL as your logo */}
+          <img
+            src="https://i.ibb.co/PtM988Y/your-image-file-name.jpg"
+            alt="Logo"
+          />
+          <span className="website-name">Wagging Tails Rescue </span>
+        </div>
+
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">
+              <i class="fas fa-home"></i> Home
+            </Link>
           </li>
           <li>
-            <Link to="/about">About Us</Link>
+            <Link to="/about">
+              <i class="fas fa-info-circle"></i> About Us
+            </Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">
+              <i class="fas fa-envelope"></i> Contact
+            </Link>
           </li>
           <li>
-            <Link to="/Login">Log Out</Link>
+            <Link to="/Login">
+              <i class="fas fa-sign-out-alt"></i> Log Out
+            </Link>
           </li>
         </ul>
       </nav>
@@ -95,6 +112,7 @@ const HomePage = () => {
 
       <header className="hero-section">
         <div className="hero-content"></div>
+        <div class="overlay-text dancing-script-unique">ADOPT ME PLEASE </div>
       </header>
       <h1>Life is Better with a Furry Friend</h1>
 
@@ -233,7 +251,6 @@ const HomePage = () => {
               width="100%"
               height="400"
               src="https://www.youtube.com/embed/YWGzaqigAo8"
-              frameBorder="0"
               allowFullScreen
               title="YouTube Video 1"
             ></iframe>
@@ -243,7 +260,6 @@ const HomePage = () => {
               width="100%"
               height="400"
               src="https://www.youtube.com/embed/LIIBNczsjI0"
-              frameBorder="0"
               allowFullScreen
               title="YouTube Video 2"
             ></iframe>

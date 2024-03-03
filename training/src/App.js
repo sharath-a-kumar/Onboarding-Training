@@ -10,13 +10,13 @@ import PetAdoptionForm from './Components/PetAdoptionForm';
 import HowToAdopt from './Components/HowToAdopt';
 import Donate from './Components/Donate ';
 
-
 function App() {
   return (
     <Router>
       <div className="app">
  
         <main className="main-content">
+   
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Login" element={<Login />} />
