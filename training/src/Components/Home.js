@@ -1,37 +1,44 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css"; // Import the base Swiper styles
-import "swiper/css/navigation"; // Import Swiper navigation styles
-import "swiper/css/pagination"; // Import Swiper pagination styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-cube";
 import "swiper/css/autoplay";
 import "../Styles/Home.css";
 import "../Styles/Navbar.css";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const HomeSwiper = ({ slides }) => {
   return (
-    <Swiper
-      spaceBetween={5}
-      slidesPerView={2}
-      navigation
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      effect="slide"
-      autoplay={{ delay: 1000, disableOnInteraction: false }}
-      loop={true}
-    >
-      {slides.map((slide) => (
-        <SwiperSlide key={slide.id}>
-          <img
-            src={slide.image}
-            alt={slide.name}
-            style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        {slides.map((slide) => (
+          <SwiperSlide key={slide.id}>
+            <img
+              src={slide.image}
+              alt={slide.name}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </>
   );
 };
 

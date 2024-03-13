@@ -1,18 +1,110 @@
-/* Styles/AboutUsPage.css */
-.about-us-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-}
 
-h1 {
-  font-size: 28px;
-  color: #333;
-}
+.card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, opacity 0.3s ease-in-out;
+    align-items: center;
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+    transform: scale(1.05);
+  }
+  
+  .card-body {
+    opacity: 0;
+ 
+  }
+  
+  .card:hover .card-body {
+    opacity: 1;
+  }
+  
+  /* Blur effect on hover */
+  .card img {
+    filter: blur(0); /* Initial state, no blur */
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .card:hover img {
+    filter: blur(5px); /* Adjust the blur intensity as needed */
+  }
+  
+  /* Additional styles for complex-animation */
+  .complex-animation {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .complex-animation:hover {
+    transform: scale(1.1) rotate(10deg);
+  }
+  
+  .complex-animation .card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(218, 218, 218, 0.8);
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .complex-animation:hover .card-body {
+    transform: translateY(0);
+  }
+  
+  /* Additional styles for complex-3d-animation */
+  .complex-3d-animation {
+    position: relative;
+    perspective: 1000px; /* Adjust the perspective value based on your preference */
+  }
+  
+  .complex-3d-animation .card {
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .complex-3d-animation .card:hover {
+    transform: rotateY(10deg) scale(1.1);
+  }
+  
+  .complex-3d-animation .card-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(-10deg);
+    transition: transform 0.5s ease-in-out;
+    align-items: center;
+  }
+  
+  .complex-3d-animation .card:hover .card-body {
+    transform: rotateY(0);
+  }
+  /* Add this CSS to your stylesheet */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust the text color */
+    font-size: 18px; /* Adjust the font size */
+    text-align: center;
+  }
+  .card-title, .card-text {
+    font-size: large;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+  }
+  
 
-p {
-  font-size: 16px;
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 16px;
-}
+  .card-title{
+    text-align: center;
+  }

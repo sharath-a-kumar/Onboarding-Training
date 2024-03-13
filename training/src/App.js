@@ -9,12 +9,14 @@ import AdoptablePetsPage from './Components/AdoptablePetsPage';
 import PetAdoptionForm from './Components/PetAdoptionForm';
 import HowToAdopt from './Components/HowToAdopt';
 import Donate from './Components/Donate ';
+import ContactUs from './Components/pages/contact';
+import EventsPage from './Components/pages/EventsPage.js'
 
 function App() {
   return (
     <Router>
       <div className="app">
- 
+  
         <main className="main-content">
    
           <Routes>
@@ -24,13 +26,13 @@ function App() {
             <Route path="/AdoptablePetsPage" element={<AdoptablePetsPage />} />
             <Route path="/PetAdoptionForm" element={<PetAdoptionForm />} />
             <Route path="/donate" element={<Donate />} />
-            
+            <Route path="/contact" element={<ContactUs/>} />
+            <Route path="/events" element={<EventsPage />} />
           </Routes>
-      
+   
         </main>
-       
         <Footer />
-        
+      
       </div>
     </Router>
   );
