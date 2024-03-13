@@ -1,0 +1,44 @@
+/* 
+.how-to-adopt {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+  }
+  
+  .how-to-adopt.show {
+    opacity: 10;
+  }
+  
+  .how-to-adopt h2,
+  .how-to-adopt p,
+  .how-to-adopt ol,
+  .how-to-adopt li,
+  .how-to-adopt button {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+            transform: translateY(20px);
+    -webkit-transition: opacity 3s ease, -webkit-transform 5s ease;
+    transition: opacity 3s ease, -webkit-transform 5s ease;
+    -o-transition: opacity 3s ease, transform 5s ease;
+    transition: opacity 3s ease, transform 5s ease;
+    transition: opacity 3s ease, transform 5s ease, -webkit-transform 5s ease;
+  }
+  
+  .how-to-adopt.show h2,
+  .how-to-adopt.show p,
+  .how-to-adopt.show ol,
+  .how-to-adopt.show li,
+  .how-to-adopt.show button {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
+  }
+  
+  
+   */

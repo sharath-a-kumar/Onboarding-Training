@@ -12,9 +12,9 @@
     background-color: #333;
     color: #fff;
     padding: 10px;
-    text-align: center; /* Center the text horizontally */
+    text-align: center; 
     display: flex;
-    justify-content: center; /* Center the entire header horizontally */
-    align-items: center; /* Center the text vertically */
+    justify-content: center; 
+    align-items: center; 
   }
   

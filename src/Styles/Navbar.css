@@ -1,29 +1,83 @@
-/* Styles/NavBar.css */
+/* Add the Pacifico font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .navbar {
-    background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Pacifico', cursive; /* Use the Pacifico font for the navbar */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: -1%;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 5px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #d5de28; /* Change the font color to your preference */
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  display: flex;
+  align-items: center; /* Align text and icon vertically */
+}
+
+.navbar a i {
+  margin-right: 1px; /* Adjust the spacing between text and icon */
+}
+
+.navbar a:hover {
+  background-color: #d5de28; /* Change the background color on hover to your preference */
+  color: #000000; /* Change the font color on hover to your preference */
+  transform: scale(1.1); /* Add a scaling effect on hover */
+}
+
+.logo img {
+  max-width: 60px; /* Adjust the size of your logo */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.website-name {
+  font-size: 1.2em; /* Adjust the font size of the website name */
+  color: #f39427; 
+  cursor: pointer;/* Change the color of the website name to your preference */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul {
+    margin-top: 10px;
+  }
+
+  .navbar li {
+    margin: 5px 0;
+  }
+
+  .navbar a {
     padding: 10px;
   }
-  
-  .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+
+  .website-name {
+    font-size: 1.5em;
   }
-  
-  .navbar li {
-    margin-right: 20px;
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 16px;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .navbar a:hover {
-    color: #ffcc00;
-  }
-  
+}

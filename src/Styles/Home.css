@@ -1,7 +1,7 @@
 .home-page {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  display: block;
 }
 
 .hero-section {
@@ -10,85 +10,83 @@
   background-color: #fbf5f5;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 .hero-section h1 {
+  font-family: 'Pacifico', cursive;
   font-size: 36px;
-  color: #333;
+  color: #000000;
 }
 
 .hero-section p {
   font-size: 18px;
   color: #555;
-}
-
-.featured-pizzas {
-  margin-top: 40px;
-}
-
-.featured-pizzas h2 {
-  font-size: 28px;
-  color: #333;
-}
-
-.pizza-list {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-}
-
-.pizza-card {
-  text-align: center;
-}
-
-.pizza-card img {
-  max-width: 15%;  /* Adjust the percentage as needed */
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  font-family: 'Pacifico', cursive;
 }
 
 
-.pizza-card h3 {
-  font-size: 24px;
-  color: #333;
+.button {
+  --bg: #ffc1c1;
+  --hover-bg: #ff90e8;
+  --hover-text: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid var(--bg);
+  border-radius: 3px;
+  /* Decreased border-radius for a smaller button */
+  padding: 0.6em 1.5em;
+  /* Decreased padding for a smaller button */
+  background: var(--bg);
+  transition: 0.2s;
 }
 
-.pizza-card p {
-  font-size: 16px;
-  color: #555;
+.button:hover {
+  color: var(--hover-text);
+  transform: translate(-0.2rem, -0.2rem);
+  background: var(--hover-bg);
+  box-shadow: 0.2rem 0.2rem var(--bg);
 }
 
-.how-to-order {
-  margin-top: 40px;
+.button:active {
+  transform: translate(0);
+  box-shadow: none;
 }
 
-.how-to-order h2 {
-  font-size: 28px;
-  color: #333;
-}
-
-.how-to-order p {
-  font-size: 18px;
-  color: #555;
-}
-
-.how-to-order ol {
-  list-style: decimal;
-  margin-left: 20px;
-}
-/* Your existing styles for the header */
-/* Your existing styles for the header */
-/* CSS */
+/* Banner Image Property*/
 .hero-section {
   position: relative;
-  height: 400px; /* Set the height of your hero section */
-  background-image: url('https://t3.ftcdn.net/jpg/00/85/32/68/240_F_85326806_k3nKFfDnL7BKZZpgplibILjssleez7za.jpg');
+  height: 400px;
+  background-image: url("https://petrehomer.org/media/qohdituh/green-hand-paw-1.png");
   background-size: cover;
   background-position: center;
   color: #ffffff;
   text-align: center;
+
 }
 
-/* Add an overlay to enhance text visibility */
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Dancing Script", cursive;
+  /* Change the font family */
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffcc00;
+  /* Set the desired text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  /* Add a subtle text shadow */
+
+  padding: 20px;
+  /* Add padding for better visibility */
+  border-radius: 10px;
+  /* Add rounded corners */
+}
+
+/* Import the Dancing Script font (or any other font you prefer) */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
 .hero-section:before {
   content: "";
   position: absolute;
@@ -96,12 +94,22 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  background: rgba(0, 0, 0, 0.5);
+  /* Adjust the opacity as needed */
 }
 
 @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 
-#Title {
+.dancing-script-unique {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  /* You can adjust the weight as needed, e.g., 400, 500, 600, or 700 */
+  font-style: normal;
+}
+
+--------------------------------------------------------------------------------------------------------------
+/* #Title {
   font-size: calc(5px + 5vh);
   line-height: calc(20px + 20vh);
   text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
@@ -110,37 +118,72 @@
   text-align: center;
   animation: blink 4s infinite;
   -webkit-animation: blink 4s infinite;
-}
+} */
 
 .pet-icon {
-  font-size: 1.5em; /* Adjust the size of the pet icon as needed */
-  margin-right: 0.2em; /* Adjust the spacing between the icon and text as needed */
+  font-size: 1.5em;
+  /* Adjust the size of the pet icon as needed */
+  margin-right: 0.2em;
+  /* Adjust the spacing between the icon and text as needed */
 }
 
 @-webkit-keyframes blink {
-  20%, 24%, 55% {
+
+  20%,
+  24%,
+  55% {
     color: #111;
     text-shadow: none;
   }
 
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow:
+      0 0 5px #ffa500,
+      0 0 15px #ffa500,
+      0 0 20px #ffa500,
+      0 0 40px #ffa500,
+      0 0 60px #ff0000,
+      0 0 10px #ff8d00,
+      0 0 98px #ff0000;
     color: #fff6a9;
   }
 }
 
 @keyframes blink {
-  20%, 24%, 55% {
+
+  20%,
+  24%,
+  55% {
     color: #111;
     text-shadow: none;
   }
 
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow:
+      0 0 5px #ffa500,
+      0 0 15px #ffa500,
+      0 0 20px #ffa500,
+      0 0 40px #ffa500,
+      0 0 60px #ff0000,
+      0 0 10px #ff8d00,
+      0 0 98px #ff0000;
     color: #fff6a9;
   }
 }
-
 
 .hero-content {
   position: absolute;
@@ -153,57 +196,52 @@
 .hero-content h1 {
   font-size: 36px;
   margin-bottom: 10px;
-  font-family: 'Roboto', sans-serif; 
-  color: #ffcc00; 
+  font-family: 'Pacifico', cursive;
+  color: #ffcc00;
+
 }
 
 .hero-content p {
   font-size: 18px;
   margin-bottom: 20px;
-  color: #ffffff; 
+  color: #ffffff;
 }
 
-
-.hero-content h1, .hero-content p {
+.hero-content h1,
+.hero-content p {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-family: 'Pacifico', cursive;
 }
-
 
 .pet-icon {
-  font-size: 1.5em; 
+  font-size: 1.5em;
 }
-
-
 
 image {
-width: 100%;
+  width: 100%;
 }
 
-/* banner */
-
-
-/* Styles.css or your custom CSS file */
 .swiper-slide-image {
-width: 100%;
-height: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .swiper-slide-image img {
-width: 100%;
-height: 100%;
-object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
+
 .swiper-container {
-width: 100%;
+  width: 100%;
 }
 
 .swiper-slide {
-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
-
 
 /* Button/*
 
@@ -211,11 +249,22 @@ flex: 0 0 auto;
 .next-page-button {
   background-color: #3498db;
   border-radius: 100px;
-  box-shadow: rgba(52, 152, 219, 0.2) 0 -25px 18px -14px inset, rgba(52, 152, 219, 0.15) 0 1px 2px, rgba(52, 152, 219, 0.15) 0 2px 4px, rgba(52, 152, 219, 0.15) 0 4px 8px, rgba(52, 152, 219, 0.15) 0 8px 16px, rgba(52, 152, 219, 0.15) 0 16px 32px;
+  box-shadow:
+    rgba(52, 152, 219, 0.2) 0 -25px 18px -14px inset,
+    rgba(52, 152, 219, 0.15) 0 1px 2px,
+    rgba(52, 152, 219, 0.15) 0 2px 4px,
+    rgba(52, 152, 219, 0.15) 0 4px 8px,
+    rgba(52, 152, 219, 0.15) 0 8px 16px,
+    rgba(52, 152, 219, 0.15) 0 16px 32px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  font-family:
+    CerebriSans-Regular,
+    -apple-system,
+    system-ui,
+    Roboto,
+    sans-serif;
   padding: 10px 25px;
   text-align: center;
   text-decoration: none;
@@ -228,13 +277,15 @@ flex: 0 0 auto;
 }
 
 .next-page-button:hover {
-  box-shadow: rgba(52, 152, 219, 0.35) 0 -25px 18px -14px inset, rgba(52, 152, 219, 0.25) 0 1px 2px, rgba(52, 152, 219, 0.25) 0 2px 4px, rgba(52, 152, 219, 0.25) 0 4px 8px, rgba(52, 152, 219, 0.25) 0 8px 16px, rgba(52, 152, 219, 0.25) 0 16px 32px;
+  box-shadow:
+    rgba(52, 152, 219, 0.35) 0 -25px 18px -14px inset,
+    rgba(52, 152, 219, 0.25) 0 1px 2px,
+    rgba(52, 152, 219, 0.25) 0 2px 4px,
+    rgba(52, 152, 219, 0.25) 0 4px 8px,
+    rgba(52, 152, 219, 0.25) 0 8px 16px,
+    rgba(52, 152, 219, 0.25) 0 16px 32px;
   transform: scale(1.05) rotate(-1deg);
 }
-
-
-
-
 
 /* Your existing styles for the header */
 /* Add the following styles for the new section with image and information */
@@ -242,18 +293,23 @@ flex: 0 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px; /* Adjust padding as needed */
+  padding: 0.5px;
+  /* Adjust padding as needed */
 }
 
 .left-column img {
-  max-width: 100%; /* Set a maximum width for the image */
-  height: auto; /* Maintain the aspect ratio of the image */
-  border-radius: 8px; /* Optional: Add border-radius for a rounded look */
+  max-width: 100%;
+  /* Set a maximum width for the image */
+  height: auto;
+  /* Maintain the aspect ratio of the image */
+  border-radius: 8px;
+  /* Optional: Add border-radius for a rounded look */
 }
 
 .right-column {
   flex: 1;
-  margin-left: 0%; /* Adjust margin as needed */
+  margin-left: 0%;
+  /* Adjust margin as needed */
   text-align: center;
 }
 
@@ -262,33 +318,168 @@ flex: 0 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px; /* Adjust margin as needed */
+  margin-bottom: 40px;
+  /* Adjust margin as needed */
 }
 
 /* Add responsive styles for smaller screens if necessary */
 @media (max-width: 768px) {
   .main-content {
-    flex-direction: column; /* Stack columns on smaller screens */
-    text-align: center; /* Center text for better readability */
-    padding: 20px; /* Adjust padding as needed */
+    flex-direction: column;
+    /* Stack columns on smaller screens */
+    text-align: center;
+    /* Center text for better readability */
+    padding: 20px;
+    /* Adjust padding as needed */
   }
 
   .left-column img {
-    max-width: 100%; /* Set a maximum width for the image on smaller screens */
-    margin-bottom: 20px; /* Add space between image and text */
+    max-width: 100%;
+    /* Set a maximum width for the image on smaller screens */
+    margin-bottom: 20px;
+    /* Add space between image and text */
   }
 
   .right-column {
-    margin-left: 0; /* Remove left margin on smaller screens */
+    margin-left: 50;
+    /* Remove left margin on smaller screens */
   }
 
   /* Add styles for the pet information section on smaller screens if needed */
   .pet-info-section {
-    flex-direction: column; /* Stack columns on smaller screens */
-    text-align: center; /* Center text for better readability */
-    margin-bottom: 20px; /* Adjust margin as needed */
+    flex-direction: column;
+    /* Stack columns on smaller screens */
+    text-align: center;
+    /* Center text for better readability */
+    margin-bottom: 20px;
+    /* Adjust margin as needed */
   }
 }
 
+.marquee-container {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 20s linear infinite;
+  /* Adjust duration and other properties */
+}
+
+.marquee-image {
+  width: 50px;
+  /* Set the desired width */
+  height: 50px;
+  /* Set the desired height */
+  margin-right: 10px;
+  /* Adjust spacing between images */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+body {
+  font-family: "Dancing Script", cursive, "Arial", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Rest of your existing styles */
+
+h1,
+h2 {
+  color: #000000;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive, "Arial", sans-serif;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: #ffa500;
 
 
+}
+
+h2 {
+  font-family: "Dancing Script", cursive, "Arial", sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  background-color: #ffa500;
+  text-align: center;
+}
+
+.cormorant-garamond-regular {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 1000;
+  font-style: normal;
+}
+
+/* Apply the font to the paragraph tag */
+p {
+  color: #000000;
+  font-size: 1.1em;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  font-family: "Cormorant Garamond", serif;
+  /* Apply the font */
+  font-weight: 400;
+  /* You can adjust the font weight if needed */
+  font-style: normal;
+  /* Set the font style */
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  font-family: "Cormorant Garamond", serif;
+  /* Apply the font */
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+strong {
+  color: #090404;
+  font-family: "Cormorant Garamond", serif;
+  /* Apply the font */
+}
+
+/* Style for the Frequently Asked Questions section */
+ul li {
+  padding-left: 20px;
+  position: relative;
+  font-family: "Cormorant Garamond", serif;
+  /* Apply the font */
+}
+
+/* ul li:before {
+  content: '•';
+  color: #007bff;
+  position: absolute;
+  left: 0;
+} */
+
+.marquee {
+  display: inline-flex;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(-00%);
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+}
